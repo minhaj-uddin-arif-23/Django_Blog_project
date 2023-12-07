@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<form style="width: 50%;margin:auto"method="post" >
+    <h1> Add Category page </h1>
+    {% csrf_token %}
+    {{form | crispy }}
+    <button class="btn btn-warning">submit</button>
+</form>
+{% comment %} <h2>my name is minhaj uddin arif and i am from bangladeshi <br> and i am a student.What are you doing now</h2> {% endcomment %}
+{% endblock  %}
